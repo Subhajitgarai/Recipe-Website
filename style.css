@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navList{
+    list-style: none; /* Remove the dot from the lsit*/
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(65deg, #f3f3f3 5%, #ffffff 100%);
+
+
+}
+nav{
+    width: 100%;
+}
+.navContainer{
+    width: 100vw;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#navLogo{
+    font-size: 2.5rem;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+.footerBox{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    text-align: center;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footerBox p{
+    color: azure;
+    font-size: 1.8rem; 
+}
+.contentBox{
+    width: 50%;
+    height:88vh;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem;
+    box-shadow: 3px 3px 30px black;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox img{
+    height: 300px;
+    width: 390px;
+    border-radius: 20px;
+}
+.rightBox {
+    transition-property: all; /* Applies on all hover properties */
+    transition-duration: 1s;
+    transition-delay: none; /* Remove or set a small delay */
+    transition-timing-function: linear;
+}
+
+.rightBox:hover{
+    transform: scale(1.05);
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    font-size: 2rem;
+}
+.ingBox{
+    font-size: 1.4rem;
+}
+.receipeBox{
+    font-size: 1.4rem;
+}
+@media (max-width:1372px){
+    .rightBox img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+    }
+}
+ul{
+    position: relative;
+    left: 4rem;
+    margin-right: 2rem;
+}
+ol{
+    position: relative;
+    left: 4rem;
+    margin-right: 15rem;
+
+}

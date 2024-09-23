@@ -85,7 +85,7 @@ a{
     width: 390px;
     border-radius: 20px;
 }
-.rightBox {
+.rightBox{
     transition-property: all; /* Applies on all hover properties */
     transition-duration: 1s;
     transition-delay: none; /* Remove or set a small delay */
@@ -125,4 +125,32 @@ ol{
     left: 4rem;
     margin-right: 15rem;
 
+}
+.rightBox{
+    position: relative;
+}
+.rightBox .overlay{
+    position: absolute; /*For overlapping of two content within same parent*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 40, 40, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: none; /* Remove or set a small delay */
+    transition-timing-function: linear;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+    
+}
+.rightBox .overlay:hover{
+    opacity: 1;
 }
